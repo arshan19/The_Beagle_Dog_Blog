@@ -1,0 +1,142 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  
+  
+  /* Heading Section */
+  .heading-section {
+    flex: 2;
+    padding: 20px;
+    border: 2px solid black; /* Border for heading-section only */
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+  
+  .heading-section h1 {
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-bottom: 15px;
+  }
+  
+  .heading-section p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #000000;
+    text-decoration: underline;
+    color: #0073e6;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  /* Images Section */
+  .images-section {
+    flex: 1;
+    padding: 20px;
+    /* No border or background here */
+  }
+  
+  .images-section h2 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin-bottom: 15px;
+  }
+  
+  .images-section img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .more-images {
+    display: block;
+    color: #0073e6;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 5px;
+  }
+  
+  /* Trivia Section */
+  .trivia-section {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .trivia-section h2 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin-bottom: 15px;
+  }
+  
+  .trivia-section ol {
+    padding-left: 20px;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  .trivia-section ol li {
+    margin-bottom: 5px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;
+    }
+  
+    .heading-section h1,
+    .images-section h2,
+    .trivia-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .heading-section p,
+    .read-more,
+    .trivia-section ol li,
+    .more-images {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .heading-section h1,
+    .images-section h2,
+    .trivia-section h2 {
+      font-size: 1.2rem;
+    }
+  
+    .heading-section p,
+    .trivia-section ol li,
+    .read-more,
+    .more-images {
+      font-size: 0.8rem;
+    }
+  
+    .read-more {
+      padding: 8px 15px;
+    }
+  }
+  
